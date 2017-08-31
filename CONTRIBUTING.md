@@ -25,11 +25,10 @@ Install the project's dependencies.
 pip install -r requirements.txt
 pip install -r requirements-dev.txt
 ```
-### Building
+### Installing
 
 ```bash
-pip install -r requirements.txt
-pip install -r requirements-dev.txt
+python setup.py install
 ```
 
 ### Testing
