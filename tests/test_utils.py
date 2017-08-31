@@ -1,5 +1,5 @@
 """
-aide_tutorial tests.
+aide_tutorial unit tests.
 """
 
 import unittest

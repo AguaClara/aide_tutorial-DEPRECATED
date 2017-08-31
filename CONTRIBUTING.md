@@ -2,8 +2,6 @@
 
 ## Getting Started
 
-Fork the repository to your own account.
-
 Clone the repository to a suitable location on your local machine.
 
 ```bash
@@ -15,12 +13,19 @@ git clone https://github.com/AguaClara/aide_tutorial.git
 To update the project from within the project's folder you can run the following command:
 
 ```bash
-git pull --rebase
+git pull
 ```
+The following commands assume that your shell is in the top directory of the cloned repo.
 
-### Building
+### Dependencies
 
 Install the project's dependencies.
+
+```bash
+pip install -r requirements.txt
+pip install -r requirements-dev.txt
+```
+### Building
 
 ```bash
 pip install -r requirements.txt
@@ -29,26 +34,22 @@ pip install -r requirements-dev.txt
 
 ### Testing
 
-Install the project's dependencies.
+Run the project's tests.
 
 ```bash
-```
-
-Next, run the project's tests.
-
-```bash
+python setup.py test
 ```
 
 ## Feature Requests
 
-I'm always looking for suggestions to improve this project. If you have a suggestion for improving an existing feature, or would like to suggest a completely new feature, please file an issue with my [github repository](https://github.com/AguaClara/aide_tutorial/issues).
+We're always looking for suggestions to improve this project. If you have a suggestion for improving an existing feature, or would like to suggest a completely new feature, please file an issue with this [github repository](https://github.com/AguaClara/aide_tutorial/issues).
 
 ## Bug Reports
 
-My project isn't always perfect, but I strive to always improve on that work. You may file bug reports on the [github repository](https://github.com/AguaClara/aide_tutorial/issues) site.
+Our project isn't always perfect, but we strive to always improve on that work. You may file bug reports on the [github repository](https://github.com/AguaClara/aide_tutorial/issues) site.
 
 ## Pull Requests
 
-Along with my desire to hear your feedback and suggestions, I'm also interested in accepting direct assistance in the form of new code or documentation.
+Along with our desire to hear your feedback and suggestions, we're also interested in accepting direct assistance in the form of new code or documentation.
 
-Please feel free to file merge requests against my [github repository](https://github.com/AguaClara/aide_tutorial/pulls).
+Please feel free to file merge requests against our [github repository](https://github.com/AguaClara/aide_tutorial/pulls).
