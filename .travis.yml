@@ -1,26 +1,31 @@
 language: python
 python:
-  - "3.6"
+- '3.6'
 env:
-  - TOXENV=py32
-  - TOXENV=py33
-  - TOXENV=py34
-  - TOXENV=py35
-  - TOXENV=pypy
-  - TOXENV=lint
+- TOXENV=py32
+- TOXENV=py33
+- TOXENV=py34
+- TOXENV=py35
+- TOXENV=pypy
+- TOXENV=lint
 install:
-  - pip install -r requirements-dev.txt
+- pip install -r requirements-dev.txt
 matrix:
   fast_finish: true
 script:
-  - python setup.py test
+- python setup.py test
 after_success:
-  - curl -Lo travis_after_all.py https://git.io/travis_after_all
-  - python travis_after_all.py
-  - export $(cat .to_export_back)
-  - |
-      if [ "$BUILD_LEADER" = "YES" ]; then
-        if [ "$BUILD_AGGREGATE_STATUS" = "others_succeeded" ]; then
-          python setup.py coverage && codecov
-        fi
-      fi
+- curl -Lo travis_after_all.py https://git.io/travis_after_all
+- python travis_after_all.py
+- export $(cat .to_export_back)
+- |
+  if [ "$BUILD_LEADER" = "YES" ]; then
+    if [ "$BUILD_AGGREGATE_STATUS" = "others_succeeded" ]; then
+      python setup.py coverage && codecov
+    fi
+  fi
+deploy:
+  provider: pypi
+  user: "aguaclara"
+  password:
+    secure: X+tpw+WsMCP0Wv4qYl6XzWRZa/QXsm+iJumH7hkXO6SVNc7h0qIjdn8CwOjSiun20GgEOlD+O89/sDQF3vL037MvoQxoeYHOXvf+o68HSB7V50VYEf/2urWHhxP+AAf8zgkV0HBww1obpp/GwMTPqwg8ZAwGi1TuaTH4t5Rj3zLjt7lpycIcIBuZpErSlXWNo55MROBwFsKydZa7UXXheTIWyOSrJ2ilFAPIQoJNHt2ZuhqgW6j1O1QhsAt374xVQNmmPxorRdK1FmWYtPG3ShTVzKqWdqiu+77Tgf/vzYulh/wUj+N+nceihkdFJPtXVEJ8vbllRTUU8HmRyFaUTrnTrgdjDeQlrC/vGwt8s/OSFnz7aPkUPPaiihxkDz+FKrSX9QRw4+4NqeypUFCb3R/SLZ8u0PqMq/Up4QF7NpHRWdAWs70h4MSaqw9u9CuHGO841JSSUGitPWJgiNkOyIwKort7s6D8ltVGBX7mjqDYJ7EprCO7570xJSepBgso0nQIQsgiUislk8x/Oycb/Ud6mA9j4L/qQUEKns1usBscxfx3sTaAQH88PYksASJhtOGt62EZFYDjwaTvRpYyy8uObtmYHbz80/4HOnfNIhEei28sXwIu887tydm7vhLaTdXSj37fmujtT1qzwTdhnMJt5Hv/tlVkTebATLO8SDI=
