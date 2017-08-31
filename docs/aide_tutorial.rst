@@ -12,6 +12,13 @@ aide_tutorial.utils module
     :undoc-members:
     :show-inheritance:
 
+aide_tutorial.encouragements module
+--------------------------
+
+.. automodule:: aide_tutorial.encouragements
+    :members:
+    :undoc-members:
+    :show-inheritance:
 
 Module contents
 ---------------
