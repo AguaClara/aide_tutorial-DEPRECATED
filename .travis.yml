@@ -1,26 +1,29 @@
 language: python
 python:
-  - "3.6"
+- '3.6'
 env:
-  - TOXENV=py32
-  - TOXENV=py33
-  - TOXENV=py34
-  - TOXENV=py35
-  - TOXENV=pypy
-  - TOXENV=lint
+- TOXENV=py32
+- TOXENV=py33
+- TOXENV=py34
+- TOXENV=py35
+- TOXENV=pypy
+- TOXENV=lint
 install:
-  - pip install -r requirements-dev.txt
+- pip install -r requirements-dev.txt
 matrix:
   fast_finish: true
 script:
-  - python setup.py test
+- python setup.py test
 after_success:
-  - curl -Lo travis_after_all.py https://git.io/travis_after_all
-  - python travis_after_all.py
-  - export $(cat .to_export_back)
-  - |
-      if [ "$BUILD_LEADER" = "YES" ]; then
-        if [ "$BUILD_AGGREGATE_STATUS" = "others_succeeded" ]; then
-          python setup.py coverage && codecov
-        fi
-      fi
+- curl -Lo travis_after_all.py https://git.io/travis_after_all
+- python travis_after_all.py
+- export $(cat .to_export_back)
+- |
+  if [ "$BUILD_LEADER" = "YES" ]; then
+    if [ "$BUILD_AGGREGATE_STATUS" = "others_succeeded" ]; then
+      python setup.py coverage && codecov
+    fi
+  fi
+notifications:
+  slack:
+    secure: BoHfa0yXtRgxHwvkT4/1OtLHmOXfCa4QLDDJacVcbBHNVU3UQdwFyKA+vPWTcDoS/7FO3VxeCBovgk3gI5tGz8Vq/gNPo4l96D+oQ8fwQH5o5XiPblXvAujX89DSJJp7/a1m/PQvG6O4ciN1QkL5LYzbk1rNWo0iBAhI+e31hJ17jBIwvtpIf+sD3PjiRVAgP7AN4Xmgs9eWxMngmjlpbqBXs0PsvrFs5u5kCIhOtYsbc+ruL+j3f22/Eiz1Dlc7bSORwpuB9KVQ0mJGFMEaD0zWncMgubBmG9JsM044HvR4jHSjPF7AwkPlDAomxa30qgxkjABdTwm/sYMxNCYBPF8lioUr11xkJFPa4Y3ubzqEt2I3NIB9hYXUALRjyfFxRyoTI9v2hmKGp7Ontdoaersb9hmEq7E7CB29Xzg4FeTPXbzHtnmDGu/1BFu+2xwT5e2+0FNzDTbxaa/ioUE6dBi8MPq+JLhZlDxEiIgOpyFwrNHzgVLuenC9iI8wiMvUCYzj2Imv2Iqr4VeHHHwpxk1SX/3zDl/VxQogjPkFSBkNocUas1RxvbHDOWXAeSA9TPWGlFWxzYlLi9qzXxGlDme7cCmRmRMQsnSmOcncfvvRL2mLZT3zIz46OyZPG2cMZtSogNIPGIaNHUjK3fE2QYSeF5aKyvy25uIha/F673Q=
