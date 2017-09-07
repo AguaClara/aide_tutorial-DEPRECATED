@@ -28,7 +28,7 @@ To install the latest with pip, use:
 
 aide_tutorial can provide you with small, personalized snippets of encouragement. For example, within a python console, you can run:
 ```
-from aide_tutorial import encouragements.py as enc
+from aide_tutorial import encouragements as enc
 enc.ethan92429()
 ```
 
