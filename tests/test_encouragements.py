@@ -1,7 +1,7 @@
 import unittest
 import io
 import sys
-from aide_tutorial.encouragements import ethan92429, skyler1253
+from aide_tutorial.encouragements import ethan92429, skyler1253,matanp
 
 
 class TestEncouragements(unittest.TestCase):
@@ -27,6 +27,18 @@ class TestEncouragements(unittest.TestCase):
         skyler1253()                            # Call unchanged function.
         sys.stdout = sys.__stdout__             # Reset redirect.
         self.assertEqual(captured_output.getvalue(), "siempre hay un pelo en la sopa.\n")
+
+    def test_matanp(self):
+        """
+        matanp test first contribution tutorial function
+        """
+        captured_output = io.StringIO()
+        sys.stdout = captured_output
+        matanp()
+        sys.stdout = sys.__stdout__
+        self.assertEqual(captured_output.getvalue(), 
+".__           .__  .__                               .__       .___\n|  |__   ____ |  | |  |   ____   __  _  _____________|  |    __| _/\n|  |  \_/ __ \|  | |  |  /  _ \  \ \/ \/ /  _ \_  __ \  |   / __ |\n|   Y  \  ___/|  |_|  |_(  <_> )  \     (  <_> )  | \/  |__/ /_/ |\n|___|  /\___  >____/____/\____/    \/\_/ \____/|__|  |____/\____ |\n     \/     \/                                                  \/ \n")
+
 
     def test_TODO(self):
         """
