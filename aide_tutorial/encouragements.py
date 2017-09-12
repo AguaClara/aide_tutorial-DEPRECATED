@@ -21,6 +21,12 @@ def matanp():
     print(
 ".__           .__  .__                               .__       .___\n|  |__   ____ |  | |  |   ____   __  _  _____________|  |    __| _/\n|  |  \_/ __ \|  | |  |  /  _ \  \ \/ \/ /  _ \_  __ \  |   / __ |\n|   Y  \  ___/|  |_|  |_(  <_> )  \     (  <_> )  | \/  |__/ /_/ |\n|___|  /\___  >____/____/\____/    \/\_/ \____/|__|  |____/\____ |\n     \/     \/                                                  \/ ")
 
+def avtrigg():
+    """
+    avtrigg's words of encouragements
+    """
+    print("Be kind, for everyone you know is fighting a hard battle.")
+    
 def TODO():
     """
     your yet-to-be-written encouragement.
