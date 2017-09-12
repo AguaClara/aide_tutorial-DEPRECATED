@@ -42,7 +42,7 @@ class TestEncouragements(unittest.TestCase):
 
     def test_avtrigg(self):
         """
-        TODO: Change this function to add your own encouragements.
+        Test avtrigg's words of encouragement.
         """
         captured_output = io.StringIO()         # Create StringIO object
         sys.stdout = captured_output            # and redirect stdout.
