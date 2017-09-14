@@ -1,7 +1,7 @@
 import unittest
 import io
 import sys
-from aide_tutorial.encouragements import ethan92429, skyler1253,matanp,avtrigg,kjuan25,prevosis
+from aide_tutorial.encouragements import ethan92429, skyler1253,matanp,avtrigg,kjuan25,prevosis,akv26
 
 
 class TestEncouragements(unittest.TestCase):
@@ -70,11 +70,15 @@ class TestEncouragements(unittest.TestCase):
         sys.stdout = sys.__stdout__             # Reset redirect.
         self.assertEqual(captured_output.getvalue(),"Hello World!\n")
 
-    def test_TODO(self):
+    def test_akv26(self):
         """
         TODO: Change this function to add your own encouragements.
         """
-        self.assertEqual(True, True)
+        captured_output = io.StringIO()         # Create StringIO object
+        sys.stdout = captured_output            # and redirect stdout.
+        akv26()                            # Call unchanged function.
+        sys.stdout = sys.__stdout__             # Reset redirect.
+        self.assertEqual(captured_output.getvalue(), "Yo this is Anthony\n")
 
 
 if __name__ == '__main__':
