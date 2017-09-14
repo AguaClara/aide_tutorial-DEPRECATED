@@ -85,6 +85,7 @@ class TestEncouragements(unittest.TestCase):
         TODO: Change this function to add your own encouragements.
         """
         captured_output = io.StringIO()         # Create StringIO object
+        sys.stdout = captured_output            # and redirect std
         akv26()                            # Call unchanged function.
         sys.stdout = sys.__stdout__             # Reset redirect.
         self.assertEqual(captured_output.getvalue(), "Yo this is Anthony\n")
@@ -94,6 +95,7 @@ class TestEncouragements(unittest.TestCase):
         TODO: Change this function to add your own encouragements.
         """
         captured_output = io.StringIO()         # Create StringIO object
+        sys.stdout = captured_output            # and redirect std
         Serena118()                            # Call unchanged function.
         sys.stdout = sys.__stdout__             # Reset redirect.
         self.assertEqual(captured_output.getvalue(), "Take a deep breath, think happy thoughts, and try again with a smile on your face!\n")
