@@ -71,7 +71,7 @@ class TestEncouragements(unittest.TestCase):
         self.assertEqual(captured_output.getvalue(),"Hello World!\n")
 
     def test_hjl(self):
-                """
+        """
         TODO: Change this function to add your own encouragements.
         """
         captured_output = io.StringIO()         # Create StringIO object
@@ -81,10 +81,22 @@ class TestEncouragements(unittest.TestCase):
         self.assertEqual(captured_output.getvalue(),"Hello Goodbye!\n")
 
     def test_akv26(self):
+        """
+        TODO: Change this function to add your own encouragements.
+        """
+        captured_output = io.StringIO()         # Create StringIO object
         akv26()                            # Call unchanged function.
         sys.stdout = sys.__stdout__             # Reset redirect.
         self.assertEqual(captured_output.getvalue(), "Yo this is Anthony\n")
 
+    def test_Serena118(self):
+        """
+        TODO: Change this function to add your own encouragements.
+        """
+        captured_output = io.StringIO()         # Create StringIO object
+        Serena118()                            # Call unchanged function.
+        sys.stdout = sys.__stdout__             # Reset redirect.
+        self.assertEqual(captured_output.getvalue(), "Take a deep breath, think happy thoughts, and try again with a smile on your face!\n")
 
 if __name__ == '__main__':
     unittest.main()
