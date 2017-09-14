@@ -27,6 +27,12 @@ def avtrigg():
     """
     print("Be kind, for everyone you know is fighting a hard battle.")
     
+def kjuan25():
+    """
+    kjuan25's test.
+    """
+    print("Hello World!")
+    
 def TODO():
     """
     your yet-to-be-written encouragement.
