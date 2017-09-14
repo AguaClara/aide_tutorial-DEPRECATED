@@ -1,7 +1,7 @@
 import unittest
 import io
 import sys
-from aide_tutorial.encouragements import ethan92429, skyler1253,matanp,avtrigg
+from aide_tutorial.encouragements import ethan92429, skyler1253,matanp,avtrigg, prevosis
 
 
 class TestEncouragements(unittest.TestCase):
@@ -36,7 +36,7 @@ class TestEncouragements(unittest.TestCase):
         sys.stdout = captured_output
         matanp()
         sys.stdout = sys.__stdout__
-        self.assertEqual(captured_output.getvalue(), 
+        self.assertEqual(captured_output.getvalue(),
 ".__           .__  .__                               .__       .___\n|  |__   ____ |  | |  |   ____   __  _  _____________|  |    __| _/\n|  |  \_/ __ \|  | |  |  /  _ \  \ \/ \/ /  _ \_  __ \  |   / __ |\n|   Y  \  ___/|  |_|  |_(  <_> )  \     (  <_> )  | \/  |__/ /_/ |\n|___|  /\___  >____/____/\____/    \/\_/ \____/|__|  |____/\____ |\n     \/     \/                                                  \/ \n")
 
 
@@ -49,14 +49,23 @@ class TestEncouragements(unittest.TestCase):
         avtrigg()                                 # Call unchanged function.
         sys.stdout = sys.__stdout__             # Reset redirect.
         self.assertEqual(captured_output.getvalue(), "Be kind, for everyone you know is fighting a hard battle.\n")
-        
-        
+
+    def test_prevosis(self):
+        """
+        Test prevosis's words of encouragement.
+        """
+        captured_output = io.StringIO()
+        sys.stdout = captured_output
+        prevosis()
+        sys.stdout = sys.__stdout__
+        self.assertEqual(captured_output.getvalue(), "valar morghulis\n")
+
     def test_TODO(self):
         """
         TODO: Change this function to add your own encouragements.
         """
         self.assertEqual(True, True)
-        
+
 
 if __name__ == '__main__':
     unittest.main()

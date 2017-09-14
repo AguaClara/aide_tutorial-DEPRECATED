@@ -7,7 +7,7 @@ def ethan92429():
     ethan92429's words of encouragement.
     """
     print("This too shall pass.")
-    
+
 def skyler1253():
     """
     skyler1253's words of encouragement.
@@ -26,7 +26,13 @@ def avtrigg():
     avtrigg's words of encouragements
     """
     print("Be kind, for everyone you know is fighting a hard battle.")
-    
+
+def prevosis():
+    """
+    prevosis's words of encouragements
+    """
+    print("valar morghulis")
+
 def TODO():
     """
     your yet-to-be-written encouragement.
