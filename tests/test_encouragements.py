@@ -59,7 +59,7 @@ class TestEncouragements(unittest.TestCase):
         sys.stdout = captured_output            # and redirect stdout.
         kjuan25()                                 # Call unchanged function.
         sys.stdout = sys.__stdout__             # Reset redirect.
-        self.assertEqual(captured_output.getvalue(),"Hello World!")
+        self.assertEqual(captured_output.getvalue(),"Hello World!\n")
     
     
     def test_TODO(self):
