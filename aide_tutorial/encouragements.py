@@ -26,12 +26,17 @@ def avtrigg():
     avtrigg's words of encouragements
     """
     print("Be kind, for everyone you know is fighting a hard battle.")
-
 def prevosis():
     """
     prevosis's words of encouragements
     """
     print("valar morghulis")
+
+def kjuan25():
+    """
+    kjuan25's test.
+    """
+    print("Hello World!")
 
 def TODO():
     """

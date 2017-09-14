@@ -1,7 +1,7 @@
 import unittest
 import io
 import sys
-from aide_tutorial.encouragements import ethan92429, skyler1253,matanp,avtrigg, prevosis
+from aide_tutorial.encouragements import ethan92429, skyler1253,matanp,avtrigg,kjuan25,prevosis
 
 
 class TestEncouragements(unittest.TestCase):
@@ -49,7 +49,6 @@ class TestEncouragements(unittest.TestCase):
         avtrigg()                                 # Call unchanged function.
         sys.stdout = sys.__stdout__             # Reset redirect.
         self.assertEqual(captured_output.getvalue(), "Be kind, for everyone you know is fighting a hard battle.\n")
-
     def test_prevosis(self):
         """
         Test prevosis's words of encouragement.
@@ -59,6 +58,17 @@ class TestEncouragements(unittest.TestCase):
         prevosis()
         sys.stdout = sys.__stdout__
         self.assertEqual(captured_output.getvalue(), "valar morghulis\n")
+
+
+    def test_kjuan25(self):
+        """
+        kjuan25's test.
+        """
+        captured_output = io.StringIO()         # Create StringIO object
+        sys.stdout = captured_output            # and redirect stdout.
+        kjuan25()                                 # Call unchanged function.
+        sys.stdout = sys.__stdout__             # Reset redirect.
+        self.assertEqual(captured_output.getvalue(),"Hello World!\n")
 
     def test_TODO(self):
         """
