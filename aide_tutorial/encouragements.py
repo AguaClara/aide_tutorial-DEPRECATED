@@ -38,6 +38,13 @@ def kjuan25():
     """
     print("Hello World!")
 
+
+def hjl():
+    """
+    your yet-to-be-written encouragement.
+    """
+    print("Hello Goodbye!")
+
 def TODO():
     """
     your yet-to-be-written encouragement.
