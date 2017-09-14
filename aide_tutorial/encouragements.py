@@ -6,9 +6,11 @@ def ethan92429():
     """
     ethan92429's words of encouragement.
     """
-    print("This too shall pass.")
+    print("This too shall pass.") 
 
-def TODO():
+
+def akv26():
     """
-    your yet-to-be-written encouragement.
+    Anthony's words of encouragement
     """
+    print("Yo this is Anthony")
