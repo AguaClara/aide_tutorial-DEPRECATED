@@ -51,11 +51,11 @@ class TestEncouragements(unittest.TestCase):
         self.assertEqual(captured_output.getvalue(), "Be kind, for everyone you know is fighting a hard battle.\n")
         
         
-    def test_TODO(self):
+    def test_kjuan25(self):
         """
-        TODO: Change this function to add your own encouragements.
+        kjuan25's test.
         """
-        self.assertEqual(True, True)
+        self.assertEqual(captured_output.getvalue(),"Hello World!")
         
 
 if __name__ == '__main__':
