@@ -55,3 +55,10 @@ def akv26():
     Anthony's words of encouragement
     """
     print("Yo this is Anthony")
+
+def Serena118():
+    """
+    Serena118's words of encouragement.
+    """
+    print("Take a deep breath, think happy thoughts, and try again with a smile on your face!")
+    
