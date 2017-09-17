@@ -1,7 +1,7 @@
 import unittest
 import io
 import sys
-from aide_tutorial.encouragements import ethan92429, skyler1253,matanp,avtrigg,kjuan25,prevosis, hjl , akv26
+from aide_tutorial.encouragements import ethan92429, skyler1253,matanp,avtrigg,kjuan25,prevosis, hjl , akv26, Serena118
 
 
 class TestEncouragements(unittest.TestCase):

@@ -61,5 +61,3 @@ def Serena118():
     Serena118's words of encouragement.
     """
     print("Take a deep breath, think happy thoughts, and try again with a smile on your face!")
-    
-    
