@@ -57,17 +57,17 @@ def Serena118():
     """
     print("Take a deep breath, think happy thoughts, and try again with a smile on your face!")
 
-def ashley():
-    """
-    ashley's words of encouragement.
-    """
-    print("You're doing gr8")
-
 def fletchapin():
     """
     fletchapin's words of encouragement.
     """
     print("You got this!")
+    
+def ashley():
+    """
+    ashley's words of encouragement.
+    """
+    print("You're doing gr8")
 
 def TODO():
     """
