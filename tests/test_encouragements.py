@@ -109,6 +109,17 @@ class TestEncouragements(unittest.TestCase):
         fletchapin()                            # Call unchanged function.
         sys.stdout = sys.__stdout__             # Reset redirect.
         self.assertEqual(captured_output.getvalue(), "You got this!\n")
+        
+    def test_ashley(self):
+        """
+        test fletchapin's words of encouragement
+        """
+        captured_output = io.StringIO()         # Create StringIO object
+        sys.stdout = captured_output            # and redirect stdout.
+        ashley()                            # Call unchanged function.
+        sys.stdout = sys.__stdout__             # Reset redirect.
+        self.assertEqual(captured_output.getvalue(), "You're doing gr8\n")
+        
 
 if __name__ == '__main__':
     unittest.main()
