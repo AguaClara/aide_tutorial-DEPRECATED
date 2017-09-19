@@ -45,11 +45,6 @@ def hjl():
     """
     print("Hello Goodbye!")
 
-def TODO():
-	"""
-	your yet-to-be-written encouragement.
-	"""
-
 def akv26():
     """
     Anthony's words of encouragement
@@ -67,3 +62,14 @@ def ashley():
     ashley's words of encouragement.
     """
     print("You're doing gr8")
+
+def fletchapin():
+    """
+    fletchapin's words of encouragement.
+    """
+    print("You got this!")
+
+def TODO():
+    """
+    your yet-to-be-written encouragement.
+    """

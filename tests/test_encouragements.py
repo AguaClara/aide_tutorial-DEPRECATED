@@ -1,7 +1,7 @@
 import unittest
 import io
 import sys
-from aide_tutorial.encouragements import ethan92429, skyler1253,matanp,avtrigg,kjuan25,prevosis, hjl , akv26, Serena118
+from aide_tutorial.encouragements import ethan92429, skyler1253, matanp, avtrigg, kjuan25, prevosis, hjl, akv26, Serena118, fletchapin
 
 
 class TestEncouragements(unittest.TestCase):
@@ -99,6 +99,16 @@ class TestEncouragements(unittest.TestCase):
         Serena118()                            # Call unchanged function.
         sys.stdout = sys.__stdout__             # Reset redirect.
         self.assertEqual(captured_output.getvalue(), "Take a deep breath, think happy thoughts, and try again with a smile on your face!\n")
+    
+    def test_fletchapin(self):
+        """
+        test fletchapin's words of encouragement
+        """
+        captured_output = io.StringIO()         # Create StringIO object
+        sys.stdout = captured_output            # and redirect stdout.
+        fletchapin()                            # Call unchanged function.
+        sys.stdout = sys.__stdout__             # Reset redirect.
+        self.assertEqual(captured_output.getvalue(), "You got this!\n")
 
 if __name__ == '__main__':
     unittest.main()
