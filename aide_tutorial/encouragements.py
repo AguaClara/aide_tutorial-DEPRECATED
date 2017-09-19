@@ -68,6 +68,12 @@ def ashley():
     ashley's words of encouragement.
     """
     print("You're doing gr8")
+    
+def anishka():
+    """
+    your yet-to-be-written encouragement.
+    """
+    print("Smile.")
 
 def TODO():
     """
