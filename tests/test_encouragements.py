@@ -112,7 +112,7 @@ class TestEncouragements(unittest.TestCase):
         
     def test_ashley(self):
         """
-        test fletchapin's words of encouragement
+        test ashley's words of encouragement
         """
         captured_output = io.StringIO()         # Create StringIO object
         sys.stdout = captured_output            # and redirect stdout.
