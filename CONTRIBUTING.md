@@ -10,35 +10,32 @@ git clone https://github.com/AguaClara/aide_tutorial.git
 
 **Note:** This will clone the entire contents of the repository at the HEAD revision.
 
-To update the project from within the project's folder you can run the following command:
-
-```bash
-git pull
-```
-The following commands assume that your shell is in the top directory of the cloned repo.
-
 ### Dependencies
 
-Install the project's dependencies.
+Install the project's dependencies. First, navigate to your the top directory of the cloned repo, and then run the pip install commands:
 
 ```bash
+cd /path/to/repo/top/directory
 pip install -r requirements.txt
 pip install -r requirements-dev.txt
 ```
-### Building
+### Installing
+
+Now install the package to your site-packages directory with the following command (run from the root directory):
 
 ```bash
-pip install -r requirements.txt
-pip install -r requirements-dev.txt
+python setup.py install
 ```
 
 ### Testing
 
-Run the project's tests.
+Run the project's tests:
 
 ```bash
 python setup.py test
 ```
+
+If any problems arise, or the tests don't all pass, please submit an issue!
 
 ## Feature Requests
 
