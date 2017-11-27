@@ -8,12 +8,12 @@ used in the AIDE ecosystem EXCEPT as a learning tool. In the wiki, you can find
 several tutorials that go over how to contribute start and maintain aide
 packages. Please feel free to write additional tutorials in the wiki.
 
-The following are descriptions of the various tutorial within the wiki:
+The following is the core syllabus for all coding teams. Any new AIDE programmers
+should start by following these tutorials:
 
 | Tutorial        | Pre-reqs           | Description  |
 | ------------- |:-------------:| -----:|
-| The Atom IDE      | None | Learn how to configure and use one of the most
-flexible IDEs on the market!|
+| The Atom IDE      | None | Learn how to configure and use one of the most flexible IDEs on the market!|
 
 ## Installation
 
